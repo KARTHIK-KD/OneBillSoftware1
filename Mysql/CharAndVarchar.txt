@@ -1,0 +1,28 @@
+mysql> create table persons(name varchar(10),gender char(6));
+Query OK, 0 rows affected (2.72 sec)
+
+mysql> insert into persons values('karthik','male');
+Query OK, 1 row affected (0.17 sec)
+
+mysql> insert into persons values('priya','female');
+Query OK, 1 row affected (0.17 sec)
+
+mysql> select length(name) from persons;
++--------------+
+| length(name) |
++--------------+
+|            7 |
+|            5 |
++--------------+
+2 rows in set (0.00 sec)
+
+mysql> select length(gender) from persons;
++----------------+
+| length(gender) |
++----------------+
+|              4 |
+|              6 |
++----------------+
+2 rows in set (0.00 sec)
+
+mysql> Terminal close -- exit!

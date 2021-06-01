@@ -1,0 +1,53 @@
+create database onebill;
+
+use onebill;
+
+create table employee(id int primary key,name varchar(20),age int,address varchar(30));
+
+describe employee;
+
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | int         | NO   | PRI | NULL    |       |
+| name    | varchar(20) | YES  |     | NULL    |       |
+| age     | int         | YES  |     | NULL    |       |
+| address | varchar(30) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+insert into employee values(1,'karthik',21,'Dharmapuri');
+insert into employee values(2,'saravanan',20,'Salem');
+insert into employee values(3,'priya',21,'Salem');
+
+select * from employee;
+
++----+-----------+------+------------+
+| id | name      | age  | address    |
++----+-----------+------+------------+
+|  1 | karthik   |   21 | Dharmapuri |
+|  2 | saravanan |   20 | Salem      |
+|  3 | priya     |   21 | Salem      |
++----+-----------+------+------------+
+
+/////////////////////delete command/////////////////////
+
+delete from employee where id=2;
+
+select * from employee;
+
++----+---------+------+------------+
+| id | name    | age  | address    |
++----+---------+------+------------+
+|  1 | karthik |   21 | Dharmapuri |
+|  3 | priya   |   21 | Salem      |
++----+---------+------+------------+
+
+/////////////////////TrunCate Command////////////////////
+
+ truncate table employee;
+
+select * from employee;
+Empty table........
+
+
+

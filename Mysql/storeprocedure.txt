@@ -1,0 +1,51 @@
+mysql> select * from order1;
++------+--------+------+
+| oid  | amount | cid  |
++------+--------+------+
+|  101 |   2000 |    1 |
+|  101 |   5000 |    2 |
+|  102 |   5550 |    1 |
+|  105 |   5550 |    4 |
++------+--------+------+
+4 rows in set (0.00 sec)
+
+mysql> delimiter //
+mysql> create procedure pp()
+    -> begin 
+    -> select * from order1;
+    -> end //
+Query OK, 0 rows affected (0.16 sec)
+
+mysql> delimiter ;
+mysql> call pp();
++------+--------+------+
+| oid  | amount | cid  |
++------+--------+------+
+|  101 |   2000 |    1 |
+|  101 |   5000 |    2 |
+|  102 |   5550 |    1 |
+|  105 |   5550 |    4 |
++------+--------+------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> delimiter //
+mysql> create procedure ppp(in id int)
+    -> begin
+    -> select * from order1 where cid=id;
+    -> end //
+Query OK, 0 rows affected (0.27 sec)
+
+mysql> delimiter ;
+mysql> call ppp(2);
++------+--------+------+
+| oid  | amount | cid  |
++------+--------+------+
+|  101 |   5000 |    2 |
++------+--------+------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> tee C:\Users\ELCOT\Desktop\DataBase\CharAndVarchar.txt

@@ -1,0 +1,21 @@
+mysql> select * from employees;
++-------+--------+--------------+------------+------------+------------+--------+------+------+-------------+
+| empid | name   | email        | mobile     | doj        | dob        | gender | exp  | dept | designation |
++-------+--------+--------------+------------+------------+------------+--------+------+------+-------------+
+|     1 | Rahul  | r@gmail.com  | 2342342342 | 2015-11-09 | 1980-11-09 | m      |    6 | A    | software    |
+|     2 | Rohit  | r@r.com      | 2342337462 | 2014-11-09 | 1983-11-09 | m      |    7 | B    | tester      |
+|     3 | Rajesh | ra@r.com     | 1234567890 | 2014-11-09 | 1975-10-30 | m      |   10 | B    | tester      |
+|     4 | Rakesh | ra@r.com     | 1234567890 | 2019-11-09 | 1989-10-30 | m      |    3 | A    | software    |
+|     5 | Rashma | rashma@r.com | 1234567890 | 2020-11-09 | 1989-10-30 | f      |    2 | B    | tester      |
++-------+--------+--------------+------------+------------+------------+--------+------+------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> select name from employees order by exp desc limit 2,1;
++-------+
+| name  |
++-------+
+| Rahul |
++-------+
+1 row in set (0.00 sec)
+
+mysql> Terminal close -- exit!
