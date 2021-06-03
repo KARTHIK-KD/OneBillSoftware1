@@ -1,0 +1,35 @@
+mysql> use MusicPlayer;
+Database changed
+mysql> select * from MusicFiles;
++---------+---------------+-------------+------------+---------------+-------------------+
+| Song_ID | Song_Title    | Artist_Name | Album_Name | Song_Location | Description       |
++---------+---------------+-------------+------------+---------------+-------------------+
+|       1 | Kadhal Konden | Karthik     | Melody     | MP3           | Tamil Movie Song  |
+|       2 | Vanathai Pola | Prasath     |  Hit       | MP3           | Tamil Movie Song  |
+|       3 | Poove Unakaga | karthik     | melody     | MP3           | Tamil Movie Song  |
+|       4 | Love Breakup  | Hip pop     |  Hit       | Mp3           | Tamil Movie Song  |
+|       5 | Vaathi Coming | Aniruth     |  Hit       | Mp3           | Tamil Movie Song  |
+|       6 | Love Breakup  | karthik     |  Hit       | MP3           | Tamil Movie Song  |
+|       7 | sigappu mani  | Aswini      | Melody     | MP3           | Tamil Movie Song  |
+|       9 | Chinna Aasai  | Dhanush     | Hit        | MP3           | Tamil Movie Song  |
++---------+---------------+-------------+------------+---------------+-------------------+
+8 rows in set (0.00 sec)
+
+mysql> select * from MusicFiles;
++---------+---------------+-------------+------------+---------------+-------------------+
+| Song_ID | Song_Title    | Artist_Name | Album_Name | Song_Location | Description       |
++---------+---------------+-------------+------------+---------------+-------------------+
+|       1 | Kadhal Konden | Karthik     | Melody     | MP3           | Tamil Movie Song  |
+|       2 | Vanathai Pola | Prasath     |  Hit       | MP3           | Tamil Movie Song  |
+|       3 | Poove Unakaga | karthik     | melody     | MP3           | Tamil Movie Song  |
+|       4 | Love Breakup  | Hip pop     |  Hit       | Mp3           | Tamil Movie Song  |
+|       5 | Vaathi Coming | Aniruth     |  Hit       | Mp3           | Tamil Movie Song  |
+|       6 | Love Breakup  | karthik     |  Hit       | MP3           | Tamil Movie Song  |
+|       7 | sigappu mani  | Aswini      | Melody     | MP3           | Tamil Movie Song  |
+|       9 | Chinna Aasai  | Dhanush     | Hit        | MP3           | Tamil Movie Song  |
+|      10 | Kandu konden  | Naveen      | Melody     | MP3           | Tamil Movie Song  |
++---------+---------------+-------------+------------+---------------+-------------------+
+9 rows in set (0.02 sec)
+
+
+
