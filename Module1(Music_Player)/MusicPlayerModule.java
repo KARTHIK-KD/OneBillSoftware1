@@ -142,10 +142,10 @@ public class MusicPlayerModule {
 					tableobj.display();
 					
 					
-				}//outer switch 3
+				}break;//outer switch 3
 				case 4:{
 					Scanner s=new Scanner(System.in);
-					System.out.print("\tPress A : Add Song to Songs Repository \n\tPress B : Edit an existing Song info\n\tPress C : Delete an existing Song info\n\tSelect Your option : ");
+					System.out.print("\n\tPress A : Add Song to Songs Repository \n\tPress B : Edit an existing Song info\n\tPress C : Delete an existing Song info\n\tSelect Your option : ");
 					char c=s.next().charAt(0);
 					switch(c) {
 						case 'A':{
